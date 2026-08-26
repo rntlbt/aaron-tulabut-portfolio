@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Aaron Santos Tulabut — Junior Web Developer Portfolio
 
 ## Folder structure
@@ -91,3 +92,6 @@ The project grid, modal, technology badges, and screenshot gallery are generated
 - Skills: `index.html` skills section
 - Experience: `index.html` experience section
 - Project content: `js/main.js`
+=======
+# aaron-tulabut-portfolio
+>>>>>>> 85d47f94f58a52546cb9ee3ff075a3484ca8032c
