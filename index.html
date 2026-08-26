@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Aaron Santos Tulabut - Junior Web Developer portfolio.">
+  <meta name="theme-color" content="#121212">
+  <title>Aaron Santos Tulabut | Junior Web Developer</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Aaron Santos Tulabut home">AST</a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero section" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Open to junior web development opportunities</p>
+          <h1 id="hero-title">Aaron Santos<br><span>Tulabut</span></h1>
+          <p class="hero-role">Junior Web Developer</p>
+          <p class="hero-summary">
+            IT graduate with internship experience in backend development and database design. I built and deployed a web-based government ICT management system using Laravel, PostgreSQL, Inertia, and FastAPI.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta" aria-label="Quick profile details">
+            <span>Pampanga, Philippines</span>
+            <span>BSIT · 2022–2026</span>
+            <span>Backend-oriented</span>
+          </div>
+        </div>
+
+        <aside class="hero-panel reveal" aria-label="Profile card">
+          <!-- PHOTO PLACEHOLDER: Replace the contents of .portrait-placeholder with your photo. Suggested size: 800 x 1000 px. -->
+          <div class="portrait-placeholder">
+            <div class="portrait-frame-icon" aria-hidden="true">＋</div>
+            <p>PHOTO<br>PLACEHOLDER</p>
+            <small>assets/images/profile.jpg</small>
+          </div>
+          <div class="hero-panel-footer">
+            <span>Based in Pampanga</span>
+            <a href="https://github.com/rntlbt" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="section split-section" id="about" aria-labelledby="about-title">
+        <div class="section-label reveal"><span>01</span> About</div>
+        <div class="section-content reveal">
+          <h2 id="about-title">I like building things<br><em>that actually work.</em></h2>
+          <p class="lead">
+            I am a BSIT graduate with practical experience turning requirements into working web applications. My strongest experience comes from developing SIMON-DOST3 during my internship at the Department of Science and Technology Regional Office Central Luzon.
+          </p>
+          <p>
+            I work most comfortably around backend web development, databases, and the application logic that connects the pieces together. I am continuing to strengthen my fundamentals while growing into professional software development.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label"><span>02</span> Technical Skills</div>
+            <h2 id="skills-title">Tools I can work with.</h2>
+          </div>
+          <p>Focused on practical web development rather than collecting technologies.</p>
+        </div>
+        <div class="skills-grid reveal">
+          <article class="skill-group">
+            <h3>Languages</h3>
+            <div class="tag-list">
+              <span>PHP</span><span>Python</span><span>HTML</span><span>JavaScript</span><span>CSS</span><span>SQL</span>
+            </div>
+          </article>
+          <article class="skill-group">
+            <h3>Frameworks & Technologies</h3>
+            <div class="tag-list">
+              <span>Laravel</span><span>Inertia</span><span>Livewire</span><span>Filament</span><span>Tailwind CSS</span><span>FastAPI</span>
+            </div>
+          </article>
+          <article class="skill-group">
+            <h3>Databases</h3>
+            <div class="tag-list"><span>PostgreSQL</span><span>MySQL</span></div>
+          </article>
+          <article class="skill-group">
+            <h3>Tools</h3>
+            <div class="tag-list"><span>Git</span><span>GitHub</span><span>Composer</span><span>VS Code</span><span>XAMPP</span><span>Laragon</span></div>
+          </article>
+          <article class="skill-group">
+            <h3>Core Concepts</h3>
+            <div class="tag-list"><span>REST APIs</span><span>OOP</span><span>MVC</span><span>Database Design</span><span>SDLC</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label"><span>03</span> Projects</div>
+            <h2 id="projects-title">Selected work.</h2>
+          </div>
+          <p>Projects are presented as evidence of what I have actually built.</p>
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- PROJECT TEMPLATE / EXPANSION GUIDE
+            To add another project later:
+            1. Duplicate one complete .project-card object in the PROJECT_DATA array in js/main.js.
+            2. Change the id, title, subtitle, year, description, features, stack, and image folder.
+            3. Add the screenshot files to assets/images/projects/<your-project-folder>/.
+            4. Add each screenshot as an object in that project's `images` array.
+            5. No other JavaScript logic changes are required. The cards and detail galleries are generated automatically.
+          -->
+        </div>
+      </section>
+
+      <section class="section split-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-label reveal"><span>04</span> Experience</div>
+        <div class="section-content reveal experience-stack">
+          <article class="experience-item">
+            <div class="experience-head">
+              <div>
+                <p class="muted-label">Software and Information Security Intern</p>
+                <h3>Department of Science and Technology Regional Office Central Luzon</h3>
+              </div>
+              <time datetime="2026-03">Mar 2026 — Jun 2026</time>
+            </div>
+            <ul>
+              <li>Developed and deployed SIMON-DOST3 using Laravel, PostgreSQL, Inertia, and FastAPI.</li>
+              <li>Designed the database and backend workflows using MVC architecture and OOP principles.</li>
+              <li>Integrated predictive models through FastAPI to support maintenance decisions.</li>
+              <li>Supported UAT, quality evaluation, security testing, deployment, system demonstrations, and end-user training.</li>
+            </ul>
+          </article>
+          <article class="experience-item compact-experience">
+            <div class="experience-head">
+              <div>
+                <p class="muted-label">Service Crew</p>
+                <h3>Yasuie Ramen - Ya · Angeles City, Pampanga</h3>
+              </div>
+              <time datetime="2026-07">Jul 2026 — Aug 2026</time>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="education" aria-labelledby="education-title">
+        <div class="section-heading reveal">
+          <div>
+            <div class="section-label"><span>05</span> Education</div>
+            <h2 id="education-title">BS Information Technology.</h2>
+          </div>
+          <p>City College of San Fernando, Pampanga · 2022–2026</p>
+        </div>
+        <div class="education-grid reveal">
+          <article>
+            <p class="muted-label">Academic recognition</p>
+            <h3>Dean's Lister · President's Lister</h3>
+            <p>Recognized throughout my undergraduate studies, including the 2025–2026 academic year.</p>
+          </article>
+          <article>
+            <p class="muted-label">Leadership</p>
+            <h3>IT Student Council</h3>
+            <p>President (2024–2025) · 2nd Year Representative (2023–2024)</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="section-label reveal"><span>06</span> Contact</div>
+        <div class="contact-content reveal">
+          <p class="eyebrow">Have an opportunity?</p>
+          <h2 id="contact-title">Let's build<br><em>something useful.</em></h2>
+          <p>For junior web development opportunities, reach out through email or GitHub.</p>
+          <div class="contact-links">
+            <a class="contact-link" href="mailto:aarontulabut21@gmail.com">
+              <span>Email</span><strong>aarontulabut21@gmail.com</strong><span aria-hidden="true">↗</span>
+            </a>
+            <a class="contact-link" href="https://github.com/rntlbt" target="_blank" rel="noreferrer">
+              <span>GitHub</span><strong>github.com/rntlbt</strong><span aria-hidden="true">↗</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Aaron Santos Tulabut</span>
+      <a href="#top">Back to top ↑</a>
+    </footer>
+  </div>
+
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-dialog" role="document">
+      <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
+      <div class="modal-topline"><span id="modal-year"></span><span id="modal-subtitle"></span></div>
+      <h2 id="modal-title"></h2>
+      <p id="modal-description" class="modal-description"></p>
+      <div class="modal-body-grid">
+        <div>
+          <div class="modal-section-title">Highlights</div>
+          <ul id="modal-features" class="modal-features"></ul>
+        </div>
+        <div>
+          <div class="modal-section-title">Technology</div>
+          <div id="modal-stack" class="tag-list"></div>
+        </div>
+      </div>
+      <div class="modal-gallery-wrap">
+        <div class="modal-section-title">Screenshots</div>
+        <div id="modal-gallery" class="modal-gallery"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
