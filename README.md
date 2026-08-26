@@ -10,6 +10,9 @@ The site is built with plain HTML, CSS, and JavaScript, with a focus on a simple
 - CSS
 - JavaScript
 
+## Can be accessed through:
+https://rntlbt.github.io/aaron-tulabut-portfolio/
+
 ## Project Structure
 
 ```text
