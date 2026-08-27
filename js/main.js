@@ -20,7 +20,7 @@
 const PROJECT_DATA = [
   {
     id: 'simon-dost3',
-    title: 'Smart ICT Management and Operations Network System for DOST Region III',
+    title: 'Smart ICT Management and Operations Network System for DOST Region III (SIMON-DOST3)',
     subtitle: 'SIMON-DOST3',
     year: '2026',
     description: 'A web-based ICT management system for asset tracking, repair and borrowing workflows, preventive maintenance, role-based access, and predictive maintenance.',
@@ -39,19 +39,21 @@ const PROJECT_DATA = [
     ]
   },
   {
-    id: 'project-2',
-    title: 'Your Second Project',
-    subtitle: 'Project placeholder',
-    year: 'YEAR',
-    description: 'Replace this placeholder with the real purpose and a concise summary of your second project.',
+    id: 'magset',
+    title: 'Management of Activities, Gatherings, Schedules, Events, and Tickets (MAGSET)',
+    subtitle: 'MAGSET',
+    year: '2025',
+    description: 'MAGSET is a role-based web platform designed to simplify how people discover, organize, and participate in events. Visitors can browse upcoming events, while registered users can join events, cancel participation, save favorites, receive notifications, and submit event reports.',
     features: [
-      'Replace with a real feature or problem solved',
-      'Replace with another notable capability',
-      'Replace with the project outcome or purpose'
+      'Browse and discover upcoming events',
+      'Join events and manage participation',
+      'Create and manage events as an approved organizer',
+      'Support tickets, pricing, sponsors, suppliers, and logistics',
+      'Manage reports, notifications, permissions, and audit records'
     ],
-    stack: ['Technology', 'Technology'],
+    stack: ['Laravel', 'MySQL', 'Livewire', 'Filament'],
     images: [
-      { src: 'assets/images/projects/project-2/01-placeholder.jpg', caption: 'Add a project screenshot', alt: 'Project screenshot placeholder' }
+      { src: 'assets/images/projects/magset/01-placeholder.jpg', caption: 'Add a project screenshot', alt: 'Project screenshot placeholder' }
     ],
     placeholder: true
   }
@@ -163,6 +165,44 @@ document.querySelectorAll('[data-close-modal]').forEach(button => {
 
 document.addEventListener('keydown', event => {
   if (event.key === 'Escape' && modal.classList.contains('is-open')) closeModal();
+});
+
+async function copyContactValue(button) {
+  const value = button.dataset.copyValue;
+  try {
+    if (navigator.clipboard && window.isSecureContext) {
+      await navigator.clipboard.writeText(value);
+    } else {
+      const textarea = document.createElement('textarea');
+      textarea.value = value;
+      textarea.setAttribute('readonly', '');
+      textarea.style.position = 'fixed';
+      textarea.style.opacity = '0';
+      document.body.appendChild(textarea);
+      textarea.select();
+      document.execCommand('copy');
+      textarea.remove();
+    }
+    button.textContent = 'Copied';
+    button.classList.add('is-copied');
+    button.setAttribute('aria-label', `Copied ${button.dataset.copyLabel}`);
+    clearTimeout(button.copyTimeout);
+    button.copyTimeout = setTimeout(() => {
+      button.textContent = 'Copy';
+      button.classList.remove('is-copied');
+      button.setAttribute('aria-label', `Copy ${button.dataset.copyLabel}`);
+    }, 1800);
+  } catch (error) {
+    button.textContent = 'Try again';
+    clearTimeout(button.copyTimeout);
+    button.copyTimeout = setTimeout(() => {
+      button.textContent = 'Copy';
+    }, 1800);
+  }
+}
+
+document.querySelectorAll('.copy-button').forEach(button => {
+  button.addEventListener('click', () => copyContactValue(button));
 });
 
 function observeReveals() {

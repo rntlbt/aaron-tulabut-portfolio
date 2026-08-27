@@ -14,6 +14,13 @@
   --content: 1200px;
 }
 
+.profile-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
@@ -143,8 +150,12 @@ h2 { margin-bottom: 22px; font-size: clamp(2.6rem, 6vw, 5.2rem); line-height: .9
 .contact-links { display: grid; gap: 10px; margin-top: 28px; max-width: 760px; }
 .contact-link { display: grid; grid-template-columns: 90px 1fr auto; gap: 20px; align-items: center; padding: 16px 0; border-top: 1px solid var(--white-10); color: var(--muted); }
 .contact-link:last-child { border-bottom: 1px solid var(--white-10); }
+.contact-link-value { display: flex; align-items: center; gap: 10px; min-width: 0; }
 .contact-link strong { color: var(--text); font-size: 1rem; font-weight: 700; overflow-wrap: anywhere; }
-.contact-link > span:last-child { color: var(--cyan); }
+.contact-link-arrow { flex: 0 0 auto; color: var(--cyan); }
+.copy-button { min-width: 70px; padding: 8px 12px; border: 1px solid rgba(0,255,204,.35); border-radius: 999px; background: transparent; color: var(--cyan); cursor: pointer; font-size: .72rem; font-weight: 800; transition: background .2s ease, color .2s ease, border-color .2s ease, transform .2s ease; }
+.copy-button:hover { transform: translateY(-2px); border-color: var(--cyan); background: rgba(0,255,204,.1); }
+.copy-button.is-copied { border-color: var(--cyan); background: var(--cyan); color: var(--base); }
 
 .site-footer { display: flex; justify-content: space-between; gap: 24px; padding: 22px 0 42px; color: var(--muted); font-size: .78rem; }
 .site-footer a { color: var(--cyan); }
@@ -202,7 +213,8 @@ h2 { margin-bottom: 22px; font-size: clamp(2.6rem, 6vw, 5.2rem); line-height: .9
   .project-stack { max-width: 100%; margin-bottom: 16px; }
   .project-open { margin-left: auto; }
   .contact-link { grid-template-columns: 1fr auto; gap: 8px; }
-  .contact-link strong { grid-column: 1 / -1; grid-row: 2; }
+  .contact-link-value { grid-column: 1 / -1; grid-row: 2; }
+  .copy-button { grid-column: 2; grid-row: 1; }
   .modal { padding: 14px; }
   .modal-dialog { max-height: calc(100vh - 28px); padding: 22px; }
 }
