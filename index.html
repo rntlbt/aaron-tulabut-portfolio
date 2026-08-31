@@ -19,7 +19,7 @@
         <a href="#experience">Experience</a>
         <a href="#contact">Contact</a>
       </nav>
-      <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">↗</span></a>
+      <a class="header-cta" href="#contact">Let's talk <span aria-hidden="true">&nearr;</span></a>
     </header>
 
     <main>
@@ -32,27 +32,21 @@
             IT graduate with internship experience in backend development and database design. I built and deployed a web-based government ICT management system using Laravel, PostgreSQL, Inertia, and FastAPI.
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">↓</span></a>
-            <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+            <a class="button button-primary" href="#projects">View my work <span aria-hidden="true">&darr;</span></a>
+            <a class="button button-secondary" href="#contact">Get in touch <span aria-hidden="true">&nearr;</span></a>
           </div>
           <div class="hero-meta" aria-label="Quick profile details">
             <span>Pampanga, Philippines</span>
-            <span>BSIT · 2022–2026</span>
+            <span>BSIT &middot; 2022-2026</span>
             <span>Backend-oriented</span>
           </div>
         </div>
 
         <aside class="hero-panel reveal" aria-label="Profile card">
-          <!-- PHOTO PLACEHOLDER: Replace the contents of .portrait-placeholder with your photo. Suggested size: 800 x 1000 px. -->
-          <!-- <div class="portrait-placeholder">
-            <div class="portrait-frame-icon" aria-hidden="true">＋</div>
-            <p>PHOTO<br>PLACEHOLDER</p>
-            <small>assets/images/profile.jpg</small>
-          </div> -->
-          <img class="profile-photo" src="assets/images/profile.jfif" alt="Aaron Santos Tulabut">
+          <img class="profile-photo" src="assets/images/profile.png" alt="Aaron Santos Tulabut">
           <div class="hero-panel-footer">
             <span>Based in Pampanga</span>
-            <a href="https://github.com/rntlbt" target="_blank" rel="noreferrer">GitHub ↗</a>
+            <a href="https://github.com/rntlbt" target="_blank" rel="noreferrer">GitHub &nearr;</a>
           </div>
         </aside>
       </section>
@@ -121,7 +115,7 @@
             1. Duplicate one complete .project-card object in the PROJECT_DATA array in js/main.js.
             2. Change the id, title, subtitle, year, description, features, stack, and image folder.
             3. Add the screenshot files to assets/images/projects/<your-project-folder>/.
-            4. Add each screenshot as an object in that project's `images` array.
+            4. Add screenshots to that project's `screenshotGroups` array, grouped by role.
             5. No other JavaScript logic changes are required. The cards and detail galleries are generated automatically.
           -->
         </div>
@@ -188,12 +182,12 @@
           <div class="contact-links">
             <div class="contact-link">
               <span>Email</span>
-              <a class="contact-link-value" href="mailto:aarontulabut21@gmail.com"><strong>aarontulabut21@gmail.com</strong><span class="contact-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="contact-link-value" href="mailto:aarontulabut21@gmail.com"><strong>aarontulabut21@gmail.com</strong><span class="contact-link-arrow" aria-hidden="true">&nearr;</span></a>
               <button class="copy-button" type="button" data-copy-value="aarontulabut21@gmail.com" data-copy-label="email" aria-label="Copy email address">Copy</button>
             </div>
             <div class="contact-link">
               <span>GitHub</span>
-              <a class="contact-link-value" href="https://github.com/rntlbt" target="_blank" rel="noreferrer"><strong>github.com/rntlbt</strong><span class="contact-link-arrow" aria-hidden="true">↗</span></a>
+              <a class="contact-link-value" href="https://github.com/rntlbt" target="_blank" rel="noreferrer"><strong>github.com/rntlbt</strong><span class="contact-link-arrow" aria-hidden="true">&nearr;</span></a>
               <button class="copy-button" type="button" data-copy-value="https://github.com/rntlbt" data-copy-label="GitHub URL" aria-label="Copy GitHub URL">Copy</button>
             </div>
           </div>
@@ -202,35 +196,13 @@
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 Aaron Santos Tulabut</span>
-      <a href="#top">Back to top ↑</a>
+      <span>&copy; 2026 Aaron Santos Tulabut</span>
+      <a href="#top">Back to top &uarr;</a>
     </footer>
   </div>
 
-  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <div class="modal-backdrop" data-close-modal></div>
-    <div class="modal-dialog" role="document">
-      <button class="modal-close" type="button" aria-label="Close project details" data-close-modal>×</button>
-      <div class="modal-topline"><span id="modal-year"></span><span id="modal-subtitle"></span></div>
-      <h2 id="modal-title"></h2>
-      <p id="modal-description" class="modal-description"></p>
-      <div class="modal-body-grid">
-        <div>
-          <div class="modal-section-title">Highlights</div>
-          <ul id="modal-features" class="modal-features"></ul>
-        </div>
-        <div>
-          <div class="modal-section-title">Technology</div>
-          <div id="modal-stack" class="tag-list"></div>
-        </div>
-      </div>
-      <div class="modal-gallery-wrap">
-        <div class="modal-section-title">Screenshots</div>
-        <div id="modal-gallery" class="modal-gallery"></div>
-      </div>
-    </div>
-  </div>
-
+  <script src="js/projects-data.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
+

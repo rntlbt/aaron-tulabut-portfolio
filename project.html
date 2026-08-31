@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Project details for Aaron Santos Tulabut's portfolio.">
+  <meta name="theme-color" content="#121212">
+  <title>Project Details | Aaron Santos Tulabut</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="brand" href="index.html" aria-label="Aaron Santos Tulabut home">AST</a>
+      <nav class="site-nav" aria-label="Project navigation">
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="index.html#projects">Back to projects <span aria-hidden="true">&larr;</span></a>
+    </header>
+
+    <main id="project-detail" class="project-detail-page">
+      <section class="project-hero section reveal">
+        <a class="back-link" href="index.html#projects">&larr; Projects</a>
+        <div class="modal-topline"><span id="project-year"></span><span id="project-subtitle"></span></div>
+        <h1 id="project-title"></h1>
+        <p id="project-description" class="project-detail-description"></p>
+        <div class="modal-body-grid">
+          <div>
+            <div class="modal-section-title">Highlights</div>
+            <ul id="project-features" class="modal-features"></ul>
+          </div>
+          <div>
+            <div class="modal-section-title">Technology</div>
+            <div id="project-stack" class="tag-list"></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="project-gallery-wrap" class="section project-gallery-section reveal">
+        <div class="section-heading">
+          <div>
+            <div class="section-label"><span>01</span> Screenshots</div>
+            <h2>Interface views.</h2>
+          </div>
+          <p>Click any screenshot to inspect it in a larger view.</p>
+        </div>
+        <div id="project-gallery" class="modal-gallery"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; 2026 Aaron Santos Tulabut</span>
+      <a href="#top">Back to top &uarr;</a>
+    </footer>
+  </div>
+
+  <div class="image-modal" id="image-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="image-modal-caption">
+    <div class="image-modal-backdrop" data-close-image-modal></div>
+    <div class="image-modal-dialog" role="document">
+      <button class="image-modal-close" type="button" aria-label="Close image viewer" data-close-image-modal>&times;</button>
+      <div class="image-modal-toolbar" aria-label="Image zoom controls">
+        <button class="image-modal-tool" type="button" data-zoom-out aria-label="Zoom out">-</button>
+        <span id="image-modal-zoom" class="image-modal-zoom">100%</span>
+        <button class="image-modal-tool" type="button" data-zoom-in aria-label="Zoom in">+</button>
+        <button class="image-modal-tool image-modal-reset" type="button" data-zoom-reset aria-label="Reset zoom">Reset</button>
+      </div>
+      <button class="image-modal-nav image-modal-prev" type="button" aria-label="Previous screenshot">&lsaquo;</button>
+      <figure class="image-modal-figure">
+        <div class="image-modal-viewport">
+          <img id="image-modal-img" src="" alt="">
+        </div>
+        <figcaption id="image-modal-caption"></figcaption>
+      </figure>
+      <button class="image-modal-nav image-modal-next" type="button" aria-label="Next screenshot">&rsaquo;</button>
+    </div>
+  </div>
+
+  <script src="js/projects-data.js"></script>
+  <script src="js/project.js"></script>
+</body>
+</html>
