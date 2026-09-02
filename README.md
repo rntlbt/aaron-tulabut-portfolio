@@ -1,6 +1,6 @@
 # Aaron Santos Tulabut — Portfolio
 
-Personal portfolio website for **Aaron Santos Tulabut**, a Junior Web Developer.
+**Aaron Santos Tulabut**, a Junior Web Developer.
 
 The site is built with plain HTML, CSS, and JavaScript, with a focus on a simple dark interface, responsive layouts, accessible interactions, and project-focused presentation.
 
